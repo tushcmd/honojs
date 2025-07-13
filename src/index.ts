@@ -60,6 +60,7 @@ app.get('/admin', (c) => {
 });
 
 // Upgrade to WebSocket
+// https://hono.dev/docs/getting-started/cloudflare-workers
 app.get(
   '/ws',
   upgradeWebSocket((c) => {
